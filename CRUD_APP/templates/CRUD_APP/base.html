@@ -21,8 +21,20 @@
     />
   </head>
   <body>
-    {% block content %} {% endblock content %}
 
+    <div class="container">
+        <div class="col-md-10 offset-md-1 mt-5">
+            <div class="jumbotron">
+                <h1 class="display-4">Employee Registration</h1>
+                <p class="lead">Django CRUD Operations</p>
+                <hr class="my-4">
+                {% block content %} {% endblock content %}
+
+              </div>
+        </div>
+    </div>
+
+   
     <script src="" async defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

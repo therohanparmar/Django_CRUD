@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from CRUD_APP import forms as CRUD_APP_FORMS
 # Create your views here.
 
 
@@ -9,7 +9,8 @@ def employee_list(request):
 
 """ Insert-Update Operation"""
 def employee_form(request):
-    return render(request, 'CRUD_APP/employee_form.html')
+    form = CRUD_APP_FORMS.EmployeeForm
+    return render(request, 'CRUD_APP/employee_form.html',{'form':form})
 
 """ Delete Employee """
 def employee_delete(request):
