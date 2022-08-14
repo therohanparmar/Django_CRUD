@@ -5,11 +5,11 @@ from django.shortcuts import render
 
 """ Get All Employee Details"""
 def employee_list(request):
-    pass
+    return render(request, 'CRUD_APP/employee_list.html')
 
 """ Insert-Update Operation"""
 def employee_form(request):
-    pass
+    return render(request, 'CRUD_APP/employee_form.html')
 
 """ Delete Employee """
 def employee_delete(request):
